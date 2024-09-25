@@ -1,4 +1,4 @@
-# pweb-html-dan-css-P20-2024
+# pweb-HTML_CSS-P20-2024
 
 ## Anggota
 - Rafael Gunawan (5027231019)
