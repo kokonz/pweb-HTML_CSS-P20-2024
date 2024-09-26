@@ -243,9 +243,11 @@ section {
 
 .menu-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 20px;
 }
 
 .menu-item {
@@ -254,10 +256,11 @@ section {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 30%;
     display: flex;
-    flex-direction: column; 
-    justify-content: space-between; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 340px;
+    box-sizing: border-box;
 }
 
 .menu-item img {
@@ -308,9 +311,11 @@ section {
 
 .services-container {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 30px;
 }
 
 .service-item {
@@ -319,7 +324,11 @@ section {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 510px;
+    box-sizing: border-box;
 }
 
 .service-item img {
