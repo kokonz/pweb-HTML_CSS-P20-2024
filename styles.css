@@ -312,6 +312,11 @@ section {
     justify-content: space-between;
     width: 340px;
     box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover, .service-item:hover {
+    transform: scale(1.05, 1.05);
 }
 
 .menu-button-section {
@@ -395,6 +400,7 @@ section {
     justify-content: space-between;
     width: 510px;
     box-sizing: border-box;
+    transition: transform 0.3s ease;
 }
 
 .service-item img {
