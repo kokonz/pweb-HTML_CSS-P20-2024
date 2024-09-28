@@ -42,6 +42,7 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 .nav-links li {
@@ -196,7 +197,7 @@ section {
 }
 
 .about-us-image img {
-    max-width: 500px;
+    width: 500px;
     height: auto;
 }
 
@@ -231,6 +232,33 @@ section {
 
 .cta-more-button:hover {
     background-color: #ff6f61;
+}
+
+/* History */
+
+.history-container {
+    background-color: #a1e6bf;
+    text-align: center;
+    border: 2px solid #a1e6bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+}
+
+.history-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    width: 700px;
+}
+
+.history-container h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
 /* Menu */
@@ -670,20 +698,94 @@ cite {
     .menu2-container {
         grid-template-columns: repeat(2, 340px);
     }
-}
-
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
+    .about-us-image img {
+        width: 300px;
+        height: auto;
     }
-    .footer-left, .footer-middle, .footer-right {
-        margin-bottom: 30px;
+    .about-us-text h2 {
+        font-size: 2.5em;
+    }
+    .about-us-text p {
+        font-size: 1.1em;
     }
 }
 
 @media (max-width: 960px) {
     .menu2-container {
         grid-template-columns: repeat(1, 340px);
+    }
+    #about-us2 {
+        height: 1200px;
+    }
+    .about-us-text h2 {
+        font-size: 2em;
+    }
+    .about-us-text p {
+        font-size: 1em;
+    }
+    .history-container {
+        height: 450px;
+    }
+    .history-text {
+        width: 400px;
+    }
+    .history-container h2 {
+        font-size: 2em;
+    }
+    .history-container p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    /*
+    .about-us-section {
+        height: 1400px;
+    }*/
+
+    #about-us2 {
+        margin-top: 100px;
+        align-items: center;
+        height: 1400px;
+    }
+    .about-us-text p {
+        font-size: 0.9em;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+    }
+    .footer-left, .footer-middle, .footer-right {
+        margin-bottom: 30px;
+    }
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-right {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu2-section {
+        margin-top: 250px;
+    }
+    .landing-text h1 {
+        font-size: 2em;
+    }
+    .landing-text p {
+        font-size: 1em;
+    }
+    .landing-section {
+        padding-top: 275px;
     }
 }
